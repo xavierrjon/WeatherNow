@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: inter, sans-serif;
+    background-color: #0a7e9a;
+    color: #ffffff;
+    padding: 2rem;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    .app-title {
+        font-size: 2.5rem;
+        margin-bottom: 1.2rem;
+        font-weight: 400;
+
+        span {
+            color: #fdc781;
+            font-weight: 800;
+        }
+    }
+
+    .app-search {
+        display: flex;
+        margin-bottom: 2rem;
+
+        input {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            border: none;
+            border-radius: 10px 0 0 10px;
+            font-size: 1rem;
+            color: #0a7e9a;
+            font-weight: 600;
+        }
+
+        input::placeholder {
+            font-size: 1rem;
+            color: #0a7e9a;
+            font-weight: 600;
+        }
+
+        button {
+            padding: 0.75rem 1rem;
+            border: none;
+            background-color: #fdc781;
+            color: #0a7e9a;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 0 10px 10px 0;
+
+            &:hover {
+                background-color: #fbbd69;
+            }
+        }
+    }
+
+}
